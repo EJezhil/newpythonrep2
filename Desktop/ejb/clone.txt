@@ -1,0 +1,127 @@
+ezhia@USBLREZHIA1 MINGW64 ~/Desktop (master)
+$ git clone https://github.com/EJezhil/Python.git
+Cloning into 'Python'...
+warning: You appear to have cloned an empty repository.
+
+ezhia@USBLREZHIA1 MINGW64 ~/Desktop (master)
+$ git add python
+
+ezhia@USBLREZHIA1 MINGW64 ~/Desktop (master)
+$ git commit
+warning: could not open directory 'Application Data/': Permission denied
+warning: could not open directory 'Cookies/': Permission denied
+warning: could not open directory 'Local Settings/': Permission denied
+warning: could not open directory 'My Documents/': Permission denied
+warning: could not open directory 'NetHood/': Permission denied
+warning: could not open directory 'PrintHood/': Permission denied
+warning: could not open directory 'Recent/': Permission denied
+warning: could not open directory 'SendTo/': Permission denied
+warning: could not open directory 'Start Menu/': Permission denied
+warning: could not open directory 'Templates/': Permission denied
+warning: could not open directory 'Application Data/': Permission denied
+warning: could not open directory 'Cookies/': Permission denied
+warning: could not open directory 'Local Settings/': Permission denied
+warning: could not open directory 'My Documents/': Permission denied
+warning: could not open directory 'NetHood/': Permission denied
+warning: could not open directory 'PrintHood/': Permission denied
+warning: could not open directory 'Recent/': Permission denied
+warning: could not open directory 'SendTo/': Permission denied
+warning: could not open directory 'Start Menu/': Permission denied
+warning: could not open directory 'Templates/': Permission denied
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    ejb.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../.bash_history
+        ../.condarc
+        ../.continuum/
+        ../3D Objects/
+        ../Anaconda3/
+        ../AppData/
+        ../Contacts/
+        ../Deloitte Remote Assistance.exe
+        758561_29-08-2022_20.29.59.zip
+        A_EZHILARASAN.jpg
+        DELIETLDWHAAILT56_Ezhilarasan A.docx
+        DELIETLDWHAAILT56_Ezhilarasan A.pdf
+        DELIETLDWHAAILT56_Ezhilarasan A.zip
+        DSC08041.jpg
+        DTC_16284_2290412_1661105268.pdf
+        Deloitte Remote Assistance.lnk
+        EZHILARASAN A - Covid Vaccine Certificate Dose -2.pdf
+        EZHILARASAN A.docx
+        Ezhilarasan A E - Aadhar Deloitte .pdf
+        Ezhilarasan A Photo .jpg
+        Ezhilarasan A Provisional certificate .pdf
+        Get Started (Deloitte Office).mp4
+        Get Started (Virtual).mp4
+        Git-2.37.3-64-bit.exe
+        HRWorks_Form_Ezhilarasan A.pdf
+        HRWorks_Form_Ezhilarasan A.zip
+        Hands on Assessment - DWH.zip
+        Hands on Assessment - DWH/
+        Hrwork.pdf
+        LMS Login_Ezhilarasan A.pdf
+        LMS Login_Ezhilarasan A.zip
+        Logical.png
+        Microsoft Office Excel 2016.lnk
+        Microsoft Office Outlook 2016.lnk
+        Microsoft Office Powerpoint 2016.lnk
+        Microsoft Office Word 2016.lnk
+        NHPD FAQ.pdf
+        New Hire Document_41124393_ Ezhilarasan A.pdf
+        Outlook.lnk
+        Problem solving.txt
+        Python/
+        Relational_1.png
+        SQL AdvSQL  - Hands on Assessment.docx
+        Snowflake Stored Procedure with Dynamic Grouping SQL.pdf
+        This PC - Shortcut.lnk
+        datamodeler-21.4.1.349.1605-x64.zip
+        datamodeler-21.4.1.349.1605-x64/
+        datamodeler-22.2.0.165.1149-x64.zip
+        datamodeler-22.2.0.165.1149-x64/
+        datamodeler.exe
+        desktop.ini
+        ej.jpg
+        ej2.jpg
+        ejb/git bash code.txt
+        ../Documents/
+        ../Downloads/
+        ../Favorites/
+        ../Links/
+        ../Lock Workstation.lnk
+        ../Music/
+        ../NTUSER.DAT
+        ../NTUSER.DAT{d8d7cf80-b6b5-11ec-9d87-1a2b3c4d0109}.TM.blf
+        ../NTUSER.DAT{d8d7cf80-b6b5-11ec-9d87-1a2b3c4d0109}.TMContainer00000000000000000001.regtrans-ms
+        ../NTUSER.DAT{d8d7cf80-b6b5-11ec-9d87-1a2b3c4d0109}.TMContainer00000000000000000002.regtrans-ms
+        ../OneDrive/
+        ../Outlook/
+        ../Pictures/
+        ../Saved Games/
+        ../Searches/
+        ../Videos/
+        ../ntuser.dat.LOG1
+        ../ntuser.dat.LOG2
+        ../ntuser.ini
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ezhia@USBLREZHIA1 MINGW64 ~/Desktop (master)
+$ git push https://github.com/EJezhil/Python.git
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (11/11), 677 bytes | 169.00 KiB/s, done.
+Total 11 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/EJezhil/Python.git
+ * [new branch]      master -> master

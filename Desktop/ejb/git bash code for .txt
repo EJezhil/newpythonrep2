@@ -1,0 +1,348 @@
+
+ezhia@USBLREZHIA1 MINGW64 ~
+$ pwd
+/c/Users/ezhia
+
+ezhia@USBLREZHIA1 MINGW64 ~
+$ help
+GNU bash, version 5.1.16(1)-release (x86_64-pc-msys)
+These shell commands are defined internally.  Type `help' to see this list.
+Type `help name' to find out more about the function `name'.
+Use `info bash' to find out more about the shell in general.
+Use `man -k' or `info' to find out more about commands not in this list.
+
+A star (*) next to a name means that the command is disabled.
+
+ job_spec [&]                                                                          history [-c] [-d offset] [n] or history -anrw [filename] or history -ps arg [arg..>
+ (( expression ))                                                                      if COMMANDS; then COMMANDS; [ elif COMMANDS; then COMMANDS; ]... [ else COMMANDS; >
+ . filename [arguments]                                                                jobs [-lnprs] [jobspec ...] or jobs -x command [args]
+ :                                                                                     kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+ [ arg... ]                                                                            let arg [arg ...]
+ [[ expression ]]                                                                      local [option] name[=value] ...
+ alias [-p] [name[=value] ... ]                                                        logout [n]
+ bg [job_spec ...]                                                                     mapfile [-d delim] [-n count] [-O origin] [-s count] [-t] [-u fd] [-C callback] [->
+ bind [-lpsvPSVX] [-m keymap] [-f filename] [-q name] [-u name] [-r keyseq] [-x keys>  popd [-n] [+N | -N]
+ break [n]                                                                             printf [-v var] format [arguments]
+ builtin [shell-builtin [arg ...]]                                                     pushd [-n] [+N | -N | dir]
+ caller [expr]                                                                         pwd [-LPW]
+ case WORD in [PATTERN [| PATTERN]...) COMMANDS ;;]... esac                            read [-ers] [-a array] [-d delim] [-i text] [-n nchars] [-N nchars] [-p prompt] [->
+ cd [-L|[-P [-e]] [-@]] [dir]                                                          readarray [-d delim] [-n count] [-O origin] [-s count] [-t] [-u fd] [-C callback] >
+ command [-pVv] command [arg ...]                                                      readonly [-aAf] [name[=value] ...] or readonly -p
+ compgen [-abcdefgjksuv] [-o option] [-A action] [-G globpat] [-W wordlist] [-F func>  return [n]
+ complete [-abcdefgjksuv] [-pr] [-DEI] [-o option] [-A action] [-G globpat] [-W word>  select NAME [in WORDS ... ;] do COMMANDS; done
+ compopt [-o|+o option] [-DEI] [name ...]                                              set [-abefhkmnptuvxBCHP] [-o option-name] [--] [arg ...]
+ continue [n]                                                                          shift [n]
+ coproc [NAME] command [redirections]                                                  shopt [-pqsu] [-o] [optname ...]
+ declare [-aAfFgiIlnrtux] [-p] [name[=value] ...]                                      source filename [arguments]
+ dirs [-clpv] [+N] [-N]                                                                suspend [-f]
+ disown [-h] [-ar] [jobspec ... | pid ...]                                             test [expr]
+ echo [-neE] [arg ...]                                                                 time [-p] pipeline
+ enable [-a] [-dnps] [-f filename] [name ...]                                          times
+ eval [arg ...]                                                                        trap [-lp] [[arg] signal_spec ...]
+ exec [-cl] [-a name] [command [argument ...]] [redirection ...]                       true
+ exit [n]                                                                              type [-afptP] name [name ...]
+ export [-fn] [name[=value] ...] or export -p                                          typeset [-aAfFgiIlnrtux] [-p] name[=value] ...
+ false                                                                                 ulimit [-SHabcdefiklmnpqrstuvxPT] [limit]
+ fc [-e ename] [-lnr] [first] [last] or fc -s [pat=rep] [command]                      umask [-p] [-S] [mode]
+ fg [job_spec]                                                                         unalias [-a] name [name ...]
+ for NAME [in WORDS ... ] ; do COMMANDS; done                                          unset [-f] [-v] [-n] [name ...]
+ for (( exp1; exp2; exp3 )); do COMMANDS; done                                         until COMMANDS; do COMMANDS; done
+ function name { COMMANDS ; } or name () { COMMANDS ; }                                variables - Names and meanings of some shell variables
+ getopts optstring name [arg ...]                                                      wait [-fn] [-p var] [id ...]
+ hash [-lr] [-p pathname] [-dt] [name ...]                                             while COMMANDS; do COMMANDS; done
+ help [-dms] [pattern ...]                                                             { COMMANDS ; }
+
+ezhia@USBLREZHIA1 MINGW64 ~
+$ ls
+'3D Objects'/                      'Local Settings'@                                                                               PrintHood@
+ Anaconda3/                        'Lock Workstation.lnk'*                                                                         Recent@
+ AppData/                           Music/                                                                                        'Saved Games'/
+'Application Data'@                'My Documents'@                                                                                 Searches/
+ Contacts/                          NTUSER.DAT                                                                                     SendTo@
+ Cookies@                           NTUSER.DAT{d8d7cf80-b6b5-11ec-9d87-1a2b3c4d0109}.TM.blf                                       'Start Menu'@
+'Deloitte Remote Assistance.exe'*   NTUSER.DAT{d8d7cf80-b6b5-11ec-9d87-1a2b3c4d0109}.TMContainer00000000000000000001.regtrans-ms   Templates@
+ Desktop/                           NTUSER.DAT{d8d7cf80-b6b5-11ec-9d87-1a2b3c4d0109}.TMContainer00000000000000000002.regtrans-ms   Videos/
+ Documents/                         NetHood@                                                                                       ejbp/
+ Downloads/                         OneDrive/                                                                                      ntuser.dat.LOG1
+ Favorites/                         Outlook/                                                                                       ntuser.dat.LOG2
+ Links/                             Pictures/                                                                                      ntuser.ini
+
+ezhia@USBLREZHIA1 MINGW64 ~
+$ cd Links
+
+ezhia@USBLREZHIA1 MINGW64 ~/Links
+$ pwd
+/c/Users/ezhia/Links
+
+ezhia@USBLREZHIA1 MINGW64 ~/Links
+$ ls
+Desktop.lnk*  Downloads.lnk*  desktop.ini
+
+ezhia@USBLREZHIA1 MINGW64 ~/Links
+$ cd ..
+
+ezhia@USBLREZHIA1 MINGW64 ~
+$ ls
+'3D Objects'/                      'Local Settings'@                                                                               PrintHood@
+ Anaconda3/                        'Lock Workstation.lnk'*                                                                         Recent@
+ AppData/                           Music/                                                                                        'Saved Games'/
+'Application Data'@                'My Documents'@                                                                                 Searches/
+ Contacts/                          NTUSER.DAT                                                                                     SendTo@
+ Cookies@                           NTUSER.DAT{d8d7cf80-b6b5-11ec-9d87-1a2b3c4d0109}.TM.blf                                       'Start Menu'@
+'Deloitte Remote Assistance.exe'*   NTUSER.DAT{d8d7cf80-b6b5-11ec-9d87-1a2b3c4d0109}.TMContainer00000000000000000001.regtrans-ms   Templates@
+ Desktop/                           NTUSER.DAT{d8d7cf80-b6b5-11ec-9d87-1a2b3c4d0109}.TMContainer00000000000000000002.regtrans-ms   Videos/
+ Documents/                         NetHood@                                                                                       ejbp/
+ Downloads/                         OneDrive/                                                                                      ntuser.dat.LOG1
+ Favorites/                         Outlook/                                                                                       ntuser.dat.LOG2
+ Links/                             Pictures/                                                                                      ntuser.ini
+
+ezhia@USBLREZHIA1 MINGW64 ~
+$ mkdir ejb
+
+ezhia@USBLREZHIA1 MINGW64 ~
+$ ls
+'3D Objects'/                       Favorites/                                                                                     NetHood@        Templates@
+ Anaconda3/                         Links/                                                                                         OneDrive/       Videos/
+ AppData/                          'Local Settings'@                                                                               Outlook/        ejb/
+'Application Data'@                'Lock Workstation.lnk'*                                                                         Pictures/       ejbp/
+ Contacts/                          Music/                                                                                         PrintHood@      ntuser.dat.LOG1
+ Cookies@                          'My Documents'@                                                                                 Recent@         ntuser.dat.LOG2
+'Deloitte Remote Assistance.exe'*   NTUSER.DAT                                                                                    'Saved Games'/   ntuser.ini
+ Desktop/                           NTUSER.DAT{d8d7cf80-b6b5-11ec-9d87-1a2b3c4d0109}.TM.blf                                        Searches/
+ Documents/                         NTUSER.DAT{d8d7cf80-b6b5-11ec-9d87-1a2b3c4d0109}.TMContainer00000000000000000001.regtrans-ms   SendTo@
+ Downloads/                         NTUSER.DAT{d8d7cf80-b6b5-11ec-9d87-1a2b3c4d0109}.TMContainer00000000000000000002.regtrans-ms  'Start Menu'@
+
+ezhia@USBLREZHIA1 MINGW64 ~
+$ pwd
+/c/Users/ezhia
+
+ezhia@USBLREZHIA1 MINGW64 ~
+$ ls
+'3D Objects'/                       Favorites/                                                                                     NetHood@        Templates@
+ Anaconda3/                         Links/                                                                                         OneDrive/       Videos/
+ AppData/                          'Local Settings'@                                                                               Outlook/        ejb/
+'Application Data'@                'Lock Workstation.lnk'*                                                                         Pictures/       ejbp/
+ Contacts/                          Music/                                                                                         PrintHood@      ntuser.dat.LOG1
+ Cookies@                          'My Documents'@                                                                                 Recent@         ntuser.dat.LOG2
+'Deloitte Remote Assistance.exe'*   NTUSER.DAT                                                                                    'Saved Games'/   ntuser.ini
+ Desktop/                           NTUSER.DAT{d8d7cf80-b6b5-11ec-9d87-1a2b3c4d0109}.TM.blf                                        Searches/
+ Documents/                         NTUSER.DAT{d8d7cf80-b6b5-11ec-9d87-1a2b3c4d0109}.TMContainer00000000000000000001.regtrans-ms   SendTo@
+ Downloads/                         NTUSER.DAT{d8d7cf80-b6b5-11ec-9d87-1a2b3c4d0109}.TMContainer00000000000000000002.regtrans-ms  'Start Menu'@
+
+ezhia@USBLREZHIA1 MINGW64 ~
+$ cd ejb
+
+ezhia@USBLREZHIA1 MINGW64 ~/ejb
+$ ls
+
+ezhia@USBLREZHIA1 MINGW64 ~/ejb
+$ cd ..
+
+ezhia@USBLREZHIA1 MINGW64 ~
+$ git init
+Initialized empty Git repository in C:/Users/ezhia/.git/
+
+ezhia@USBLREZHIA1 MINGW64 ~ (master)
+$ git add ejb
+
+ezhia@USBLREZHIA1 MINGW64 ~ (master)
+$ git commit -m "EJB commit"
+warning: could not open directory 'Application Data/': Permission denied
+warning: could not open directory 'Cookies/': Permission denied
+warning: could not open directory 'Local Settings/': Permission denied
+warning: could not open directory 'My Documents/': Permission denied
+warning: could not open directory 'NetHood/': Permission denied
+warning: could not open directory 'PrintHood/': Permission denied
+warning: could not open directory 'Recent/': Permission denied
+warning: could not open directory 'SendTo/': Permission denied
+warning: could not open directory 'Start Menu/': Permission denied
+warning: could not open directory 'Templates/': Permission denied
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .bash_history
+        .condarc
+        .continuum/
+        3D Objects/
+        Anaconda3/
+        AppData/
+        Contacts/
+        Deloitte Remote Assistance.exe
+        Desktop/
+        Documents/
+        Downloads/
+        Favorites/
+        Links/
+        Lock Workstation.lnk
+        Music/
+        NTUSER.DAT
+        NTUSER.DAT{d8d7cf80-b6b5-11ec-9d87-1a2b3c4d0109}.TM.blf
+        NTUSER.DAT{d8d7cf80-b6b5-11ec-9d87-1a2b3c4d0109}.TMContainer00000000000000000001.regtrans-ms
+        NTUSER.DAT{d8d7cf80-b6b5-11ec-9d87-1a2b3c4d0109}.TMContainer00000000000000000002.regtrans-ms
+        OneDrive/
+        Outlook/
+        Pictures/
+        Saved Games/
+        Searches/
+        Videos/
+        ntuser.dat.LOG1
+        ntuser.dat.LOG2
+        ntuser.ini
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ezhia@USBLREZHIA1 MINGW64 ~ (master)
+$ ls
+'3D Objects'/                       Favorites/                                                                                     NetHood@        Templates@
+ Anaconda3/                         Links/                                                                                         OneDrive/       Videos/
+ AppData/                          'Local Settings'@                                                                               Outlook/        ejb/
+'Application Data'@                'Lock Workstation.lnk'*                                                                         Pictures/       ejbp/
+ Contacts/                          Music/                                                                                         PrintHood@      ntuser.dat.LOG1
+ Cookies@                          'My Documents'@                                                                                 Recent@         ntuser.dat.LOG2
+'Deloitte Remote Assistance.exe'*   NTUSER.DAT                                                                                    'Saved Games'/   ntuser.ini
+ Desktop/                           NTUSER.DAT{d8d7cf80-b6b5-11ec-9d87-1a2b3c4d0109}.TM.blf                                        Searches/
+ Documents/                         NTUSER.DAT{d8d7cf80-b6b5-11ec-9d87-1a2b3c4d0109}.TMContainer00000000000000000001.regtrans-ms   SendTo@
+ Downloads/                         NTUSER.DAT{d8d7cf80-b6b5-11ec-9d87-1a2b3c4d0109}.TMContainer00000000000000000002.regtrans-ms  'Start Menu'@
+
+ezhia@USBLREZHIA1 MINGW64 ~ (master)
+$ cd Desktop
+
+ezhia@USBLREZHIA1 MINGW64 ~/Desktop (master)
+$ mkdir ejb
+
+ezhia@USBLREZHIA1 MINGW64 ~/Desktop (master)
+$ touch ejb.txt
+
+ezhia@USBLREZHIA1 MINGW64 ~/Desktop (master)
+$ cat ejb.txt
+
+ezhia@USBLREZHIA1 MINGW64 ~/Desktop (master)
+$ cat > ejb.txt
+Hi I am Ezhil
+
+ezhia@USBLREZHIA1 MINGW64 ~/Desktop (master)
+$ cat ejb.txt
+Hi I am Ezhil
+
+ezhia@USBLREZHIA1 MINGW64 ~/Desktop (master)
+$ git add ejb
+
+ezhia@USBLREZHIA1 MINGW64 ~/Desktop (master)
+$ pwd
+/c/Users/ezhia/Desktop
+
+ezhia@USBLREZHIA1 MINGW64 ~/Desktop (master)
+$ git commit -m "EJB commit"
+warning: could not open directory 'Application Data/': Permission denied
+warning: could not open directory 'Cookies/': Permission denied
+warning: could not open directory 'Local Settings/': Permission denied
+warning: could not open directory 'My Documents/': Permission denied
+warning: could not open directory 'NetHood/': Permission denied
+warning: could not open directory 'PrintHood/': Permission denied
+warning: could not open directory 'Recent/': Permission denied
+warning: could not open directory 'SendTo/': Permission denied
+warning: could not open directory 'Start Menu/': Permission denied
+warning: could not open directory 'Templates/': Permission denied
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../.bash_history
+        ../.condarc
+        ../.continuum/
+        ../3D Objects/
+        ../Anaconda3/
+        ../AppData/
+        ../Contacts/
+        ../Deloitte Remote Assistance.exe
+        ./
+        ../Documents/
+        ../Downloads/
+        ../Favorites/
+        ../Links/
+        ../Lock Workstation.lnk
+        ../Music/
+        ../NTUSER.DAT
+        ../NTUSER.DAT{d8d7cf80-b6b5-11ec-9d87-1a2b3c4d0109}.TM.blf
+        ../NTUSER.DAT{d8d7cf80-b6b5-11ec-9d87-1a2b3c4d0109}.TMContainer00000000000000000001.regtrans-ms
+        ../NTUSER.DAT{d8d7cf80-b6b5-11ec-9d87-1a2b3c4d0109}.TMContainer00000000000000000002.regtrans-ms
+        ../OneDrive/
+        ../Outlook/
+        ../Pictures/
+        ../Saved Games/
+        ../Searches/
+        ../Videos/
+        ../ntuser.dat.LOG1
+        ../ntuser.dat.LOG2
+        ../ntuser.ini
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ezhia@USBLREZHIA1 MINGW64 ~/Desktop (master)
+$ git add ejb.txt
+warning: in the working copy of 'Desktop/ejb.txt', LF will be replaced by CRLF the next time Git touches it
+
+ezhia@USBLREZHIA1 MINGW64 ~/Desktop (master)
+$ cd ejb
+
+ezhia@USBLREZHIA1 MINGW64 ~/Desktop/ejb (master)
+$ ls
+
+ezhia@USBLREZHIA1 MINGW64 ~/Desktop/ejb (master)
+$ pwd
+/c/Users/ezhia/Desktop/ejb
+
+ezhia@USBLREZHIA1 MINGW64 ~/Desktop/ejb (master)
+$ ls
+ejb.txt
+
+ezhia@USBLREZHIA1 MINGW64 ~/Desktop/ejb (master)
+$ cat ejb.txt
+Hi I am Ezhil
+
+ezhia@USBLREZHIA1 MINGW64 ~/Desktop/ejb (master)
+$ git add ejb.txt
+warning: in the working copy of 'Desktop/ejb/ejb.txt', LF will be replaced by CRLF the next time Git touches it
+
+ezhia@USBLREZHIA1 MINGW64 ~/Desktop/ejb (master)
+$ git commit -m "EJB commit"
+[master (root-commit) f41ca92] EJB commit
+ Committer: A <ezhia@deloitte.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 2 insertions(+)
+ create mode 100644 Desktop/ejb.txt
+ create mode 100644 Desktop/ejb/ejb.txt
+
+ezhia@USBLREZHIA1 MINGW64 ~/Desktop/ejb (master)
+$ git remote add origin https://github.com/EJezhil/EJB.git
+
+ezhia@USBLREZHIA1 MINGW64 ~/Desktop/ejb (master)
+$ git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (5/5), 333 bytes | 166.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/EJezhil/EJB.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+ezhia@USBLREZHIA1 MINGW64 ~/Desktop/ejb (master)
+$

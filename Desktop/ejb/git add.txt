@@ -1,0 +1,64 @@
+ezhia@USBLREZHIA1 MINGW64 ~
+$ git init
+Initialized empty Git repository in C:/Users/ezhia/.git/
+
+ezhia@USBLREZHIA1 MINGW64 ~/Desktop (master)
+$ cd ejb
+
+ezhia@USBLREZHIA1 MINGW64 ~/Desktop/ejb (master)
+$ ls
+
+ezhia@USBLREZHIA1 MINGW64 ~/Desktop/ejb (master)
+$ pwd
+/c/Users/ezhia/Desktop/ejb
+
+ezhia@USBLREZHIA1 MINGW64 ~/Desktop/ejb (master)
+$ ls
+ejb.txt
+
+ezhia@USBLREZHIA1 MINGW64 ~/Desktop/ejb (master)
+$ cat ejb.txt
+Hi I am Ezhil
+
+ezhia@USBLREZHIA1 MINGW64 ~/Desktop/ejb (master)
+$ git add ejb.txt
+warning: in the working copy of 'Desktop/ejb/ejb.txt', LF will be replaced by CRLF the next time Git touches it
+
+ezhia@USBLREZHIA1 MINGW64 ~/Desktop/ejb (master)
+$ git commit -m "EJB commit"
+[master (root-commit) f41ca92] EJB commit
+ Committer: A <ezhia@deloitte.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 2 insertions(+)
+ create mode 100644 Desktop/ejb.txt
+ create mode 100644 Desktop/ejb/ejb.txt
+
+ezhia@USBLREZHIA1 MINGW64 ~/Desktop/ejb (master)
+$ git remote add origin https://github.com/EJezhil/EJB.git
+
+ezhia@USBLREZHIA1 MINGW64 ~/Desktop/ejb (master)
+$ git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (5/5), 333 bytes | 166.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/EJezhil/EJB.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+ezhia@USBLREZHIA1 MINGW64 ~/Desktop/ejb (master)
+$
+
